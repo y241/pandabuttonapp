@@ -7,3 +7,10 @@ $ cd pandabuttonapp/pandaApp
 $ npm install
 $ node app.js
 ```
+##### status
+```
+0: いいね
+1: わお
+2: うわーん
+3: むむ
+```
