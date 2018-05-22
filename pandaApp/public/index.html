@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <link rel="stylesheet" href="/stylesheets/white.css" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/buttonstyle.css" type="text/css">
+  <script type="text/javascript" src="/javascripts/client.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div id="count">
+      <span>
+        君に届け
+        <img src="/icons/bear.png" alt="ぱんだ" id="panda">
+      </span>
+      <span id="panda" class="pandaN">× ?</span>
+    </div>
+    <br style="clear:both;">
+  </div>
+  <div id="tmp">
+    <div id="main">
+      <div id="picture">
+        <div id="face">
+          <img id="speaker" src="/images/speaker/junbi.png" alt="登壇者">
+        </div>
+        <span id="name">準備中</span>
+        <div id="timeline"></div>
+      </div>
+    </div>
+    <div id="emo">
+      <div id="grid">
+        <div id="0" class="row good">
+          <div class="b-social">
+            <figure class="iine">
+              <figcaption  class="inline">
+                <div onclick="pushed('0');" class="emoIine">
+                  <h1>
+                    <i class="good" aria-hidden="true">
+                      <img src="/images/iine.png" class="kao">
+                    </i>
+                  </h1>
+                  <p>いいね</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="b-social">
+            <figure class="wao">
+              <figcaption  class="inline">
+                <div onclick="pushed('1');" class="emoWao">
+                  <h1>
+                    <i class="fa fa-codepen fa-5x" aria-hidden="true">
+                      <img src="/images/wao.png" class="kao">
+                    </i>
+                  </h1>
+                  <p>わお</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div id="1" class="row">
+            <div class="b-social">
+              <figure class="uwan">
+                <figcaption  class="inline">
+                  <div onclick="pushed('2');" class="emoUwan">
+                    <h1>
+                      <i class="fa fa-linkedin fa-5x" aria-hidden="true">
+                        <img src="/images/uwan.png" class="kao">
+                      </i>
+                    </h1>
+                    <p>うわーん</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="b-social">
+              <figure class="mumu">
+                <figcaption  class="inline">
+                  <div onclick="pushed('3');" class="emoMumu">
+                    <h1>
+                      <i class="fa fa-facebook fa-5x" aria-hidden="true">
+                        <img src="/images/mumu.png" class="kao">
+                      </i>
+                    </h1>
+                    <p>むむ</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="readme">
+    <div>
+        <img src="/icons/apptitle.png" class="logo" alt="タイトル" id="apptitle"><br/>      
+        あなたが今感じたことを<br/>
+        登壇者に届けよう<br/><br/><br/>
+        <img src="/icons/bear.png" class="loginButton" alt="ぱんだ" id="bear"><br/>
+        
+        <div id="touchbear">くまをタッチ！</div><br/><br/>
+  
+        <div id="attention">
+        ※注意事項※<br/>
+        私用スマホを利用する場合、通信費は自己負担でお願いします</br>
+        <br/>
+        タイムスケジュールにより写真がずれていることがありますが、<br/>
+        発表時間ベースでお気持ちは届きます。<br/>ご安心ください。<br/>
+        </div>
+  
+        <br/>
+
+        <img src="/icons/creator.png" class="logo" alt="creator by" id="creator">  
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+    <script type="text/javascript" src="/javascripts/speaker-image.js"></script>
+</body>
+
+</html>
