@@ -16,7 +16,7 @@ var speakers = [
 
 function speakerChanger() {
   var xhr = new XMLHttpRequest();
-  xhr.open("get", "http://localhost:3001/speaker");
+  xhr.open("get", location.href + "speaker");
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.send();
   xhr.addEventListener("load", function() {

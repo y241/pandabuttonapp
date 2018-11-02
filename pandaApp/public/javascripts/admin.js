@@ -1,6 +1,7 @@
 function selectSpeaker (speaker) {
   var xhr = new XMLHttpRequest();
-  xhr.open("post", "http://localhost:3001/speaker");
+  var url = location.href.replace("admin","");
+  xhr.open("post", url + "speaker");
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.send('speaker=' + speaker);
   xhr.addEventListener("load", function() {
