@@ -7,9 +7,6 @@ RUN apt-get install npm unzip -y
 
 RUN unzip pandaApp.zip
 RUN npm install
+RUN npm i -g forever
 
-RUN ./node_modules/.bin/gulp
-
-EXPOSE 3000
-
-CMD date ; npm start
+EXPOSE 3001
