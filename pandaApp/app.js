@@ -46,7 +46,8 @@ app.use(function(err, req, res, next) {
   
   // render the error page
   res.status(err.status || 500);
-  res.sendFile("./public/error.html", { root: __dirname });
+  //res.sendFile("./public/error.html", { root: __dirname });
+  res.sendfile("public/error.html");
 });
 
 /* listen()メソッドを実行して3001番ポートで待ち受け。*/
