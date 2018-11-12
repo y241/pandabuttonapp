@@ -3,7 +3,7 @@ var router = express.Router();
 var Sequelize = require('sequelize');
 var sequelize = new Sequelize('pandadb',
   process.env.RDS_USERNAME || 'panda',
-  process.env.RDS_PASSWORD || 'panda99',
+  process.env.RDS_PASSWORD || 'panda999',
   {dialect:'mysql', host: process.env.RDS_HOSTNAME || 'localhost', port: process.env.RDS_PORT || '3306'}
 );
 const uuidv1 = require('uuid/v1');
