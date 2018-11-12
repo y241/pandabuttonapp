@@ -22,9 +22,22 @@ body{
   color: white;
 }
 
+#chat-button{
+  float: left;
+  font-size: 25px;
+  color: white;
+}
+
 #panda{
   height: 25px;
   padding-top: 10px;
+  color: #ffffff;
+}
+
+#chat-icon{
+  height: 25px;
+  padding-top: 10px;
+  padding-left: 5px;
   color: #ffffff;
 }
 
