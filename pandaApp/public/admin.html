@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <link rel="stylesheet" href="stylesheets/white.css" type="text/css">
+  <link rel="stylesheet" href="stylesheets/buttonstyle.css" type="text/css">
+</head>
+ <body>
+  <div class="readme">
+    <div id="sorry">
+      <h1>管理者用</h1>
+      話し手選択
+    </div>
+    <div id="current-speaker">0</div>
+    <div>
+      <p>
+        <label id="junbi-no">0：</label>
+        <button onclick="selectSpeaker(0)">準備</button>
+      </p>
+      <p>
+        <label id="speaker1-no">1：</label>
+        <button onclick="selectSpeaker(1)">話し手1</button>
+      </p>
+      <p>
+        <label id="speaker1-no">2：</label>
+        <button onclick="selectSpeaker(2)">話し手2</button>
+      </p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="javascripts/admin.js"></script>
+</body>
+ </html> 
