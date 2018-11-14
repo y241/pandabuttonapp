@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no">
   <link rel="stylesheet" href="/stylesheets/white.css" type="text/css">
   <link rel="stylesheet" href="/stylesheets/buttonstyle.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="/javascripts/client.js"></script>
   <script type="text/javascript" src="/javascripts/chat.js"></script>
 </head>
@@ -109,7 +110,7 @@
         onsubmit="post(0);return false;">
         <!-- TODO URLの修正 -->
         <div class="form-group">
-          <input type=text class="form-control" name="message">
+          <input type=text class="form-control" name="message" id="tweet-text-form" required>
         </div>
         <div class="form-group">
           <input type=submit class="btn btn-default" value="Tweet">
@@ -138,7 +139,6 @@
 
       <img src="/icons/creator.png" class="logo" alt="creator by" id="creator">
     </div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/main.js"></script>
     <script type="text/javascript" src="/javascripts/speaker-image.js"></script>

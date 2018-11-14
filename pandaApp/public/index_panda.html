@@ -1,6 +1,7 @@
 ﻿<html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--  <meta http-equiv="refresh" content="10" > -->
 </head>
 <body>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -14,25 +15,18 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="./javascripts/chat.js"></script>
-  <h1>Hello, Serverless!</h1>
-  <div class="panel panel-success center-block" style="max-width:95%;">
-    <div class="panel-heading">
-      Tweets
+  <div class="bg-info">
+    <div class="page-header">
+      <h1>エバコミ LT大会！！</h1>
     </div>
-    <div class="panel-body">
-      <div id="tweets"></div>
+    <div class="panel panel-success center-block" style="max-width:95%;">
+      <div class="panel-heading">
+        コメント
+      </div>
+      <div class="panel-body bg-warning">
+        <div class="bg-warning" id="tweets"></div>
+      </div>
     </div>
-  </div>
-
-  <div class="base">
-    <form id="tweet-form" class="form-inline" method="POST" contentType="application/json" action="https://aet0ar38og.execute-api.ap-northeast-1.amazonaws.com/panda/panda" onsubmit="post(1);return false;"> <!-- TODO URLの修正 -->
-      <div class="form-group">
-        <input type=text class="form-control" name="message">
-      </div>
-      <div class="form-group">
-        <input type=submit class="btn btn-default" value="Tweet">
-      </div>
-    </form>
   </div>
 
 </body>

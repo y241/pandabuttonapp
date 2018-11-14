@@ -20,7 +20,6 @@ $.ajax({
     $($form.serializeArray()).each(function(i, v) {
       param[v.name] = v.value;
     });
-    console.log(JSON.stringify(param));
     $.ajax({
         url: $form.attr('action'),
         type: $form.attr('method'),
@@ -29,7 +28,7 @@ $.ajax({
         timeout: 10000,
         complete: function(xhr, textStatus) {
           if(view == 0){
-            window.location.href = './index_panda.html';
+            $('#tweet-text-form').val('');
           }else {
             window.location.reload(); // post完了後に画面のリロード
           }
