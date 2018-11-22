@@ -32,7 +32,7 @@ function speakerChanger() {
   }, false);
 }
 
-$(window).load(function() {
+$(window).on('load',function(){
   speakerChanger();
   setInterval("speakerChanger()", 60000);
-});
+})
